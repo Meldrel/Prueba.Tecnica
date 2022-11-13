@@ -57,7 +57,6 @@ namespace Prueba.Tecnica.Infrastructure.Repository
 
         private string EncodePassword(string password)
         {
-            //TODO Implementar sistema de codificación real
             var encodedPasword = Convert.ToBase64String(Encoding.UTF8.GetBytes(password));
 
             return encodedPasword;        
