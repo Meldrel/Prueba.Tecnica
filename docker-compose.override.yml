@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  prueba.tecnica.api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "8080:80"
+    extra_hosts:
+      - "localhost:host-gateway"
+
+networks:
+  prueba:
+    name: prueba
+
+volumes:
+  postgres:
+    driver: local

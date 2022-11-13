@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Prueba.Tecnica.Aplication\Prueba.Tecnica.Aplication.csproj" />
+    <ProjectReference Include="..\Prueba.Tecnica.Infrastructure.Test\Prueba.Tecnica.Infrastructure.Test.csproj" />
+  </ItemGroup>
+
+</Project>
